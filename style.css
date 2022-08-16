@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+:root {
+  --darkblue: #1a2647;
+  --yellow: #ff7a00;
+  --btnBlue: #394b7d;
+  --mainBlue: #6e7eab;
+}
+
+body {
+  background-color: var(--darkblue);
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+#yellowColor {
+  color: var(--yellow);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  color: #fff;
+}
+
+nav .logo {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+nav .nav-links ul li {
+  display: inline-block;
+  padding: 0 1rem;
+  color: var(--mainBlue);
+}
+
+nav .nav-links ul li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: var(--yellow);
+  display: block;
+  margin: auto;
+  transition: all 0.3s ease-in;
+}
+
+nav .nav-links ul li a:hover::after {
+  width: 60%;
+}
+
+nav .nav-links ul li a:hover {
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+
+.btnPrimary {
+  background: rgb(255, 125, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 125, 0, 1) 0%,
+    rgba(255, 181, 0, 1) 100%
+  );
+  border: unset;
+  outline: unset;
+  padding: 0.6rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+}
+
+.hero-foods-icons img {
+  width: 50px;
+}
+
+/* banner */
+
+.hero-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: var(--mainBlue);
+}
+.hero-image {
+  /* flex-basis: 35%; */
+  text-align: center;
+}
+
+.hero-image img {
+  /* clip-path: circle(40%); */
+  width: 80%;
+  border-radius: 20px;
+}
+
+.hero-text {
+  /* flex-basis: 50%; */
+}
+.hero-text h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  padding: 0.5rem 0;
+  line-height: 1.2;
+}
+
+.hero-text .btns {
+  margin: 1rem auto;
+}
+
+.hero-text .btns > a {
+  padding: 0 0.2rem;
+}
+
+.hero-text .seeCat {
+  background: var(--btnBlue);
+  color: #fff;
+}
+
+.hero-text .happy-customer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text .happy-customer-img img {
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+#hcimg1 {
+  /* z-index: 10000; */
+}
+
+#hcimg2,
+#hcimg3 {
+  margin-left: -1rem;
+}
+
+.happy-customer > div {
+  padding: 0.2rem 0.4rem;
+}
+
+.hero-text .happy-customer-text h5 {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.hero-text .happy-customer-text .fa-star {
+  color: yellow;
+}
+
+.hero-foods-icons {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-foods-icons .hero-fruits img {
+  border-radius: 50%;
+}
